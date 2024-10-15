@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    border: 2px solid darkred;
+    padding: 20px;
+}
+
+p {
+    font-size: 18px;
+}
