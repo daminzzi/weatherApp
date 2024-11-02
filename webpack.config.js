@@ -35,7 +35,7 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
-    liveReload: false,
+    // liveReload: false,
     port: 3000,
   },
   resolve: {

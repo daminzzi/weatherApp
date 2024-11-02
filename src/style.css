@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4780ba;
+    color: #c96e6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #app {
+    text-align: center;
+    padding: 20px;
+    background-color: #7f3e3e;
+    box-shadow: 0 4px 8px rgba(59, 132, 174, 0.2);
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #current-time,
+  #location,
+  #temperature,
+  #humidity,
+  #description {
+    font-size: 24px;
+    margin: 8px 0;
+  }
+  
+  #location {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  
+  #temperature {
+    font-size: 22px;
+  }
+  
+  #description {
+    font-style: italic;
+  }

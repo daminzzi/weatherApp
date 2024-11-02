@@ -1,3 +1,11 @@
+// import Style from './style.css';
+import './style.css';
+import { createTimeComponent } from "./components/timeComponent";
+import { createWeatherComponent } from "./components/weatherComponent";
+import { config } from "../apikeys";
+
+const API_KEY = config.apikey;
+
 document.addEventListener('DOMContentLoaded', () => {
   const appDiv = document.getElementById('app'); 
 
@@ -6,8 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
   appDiv.appendChild(title);
 
   const weatherInfo = document.createElement('div');
-  
+
   // TODO: 시간과 날씨 정보를 컴포넌트로 생성하여 weatherInfo의 child로 추가.
-  
+  const timeComponent = createTimeComponent();
+  weatherInfo.appendChild(timeComponent);
+
+  const weatherComponent = createWeatherComponent(config.apikey);
+  weatherInfo.appendChild(weatherComponent);
+
   appDiv.appendChild(weatherInfo);
+
 })
