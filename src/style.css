@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+#app {
+  text-align: center;
+  padding: 20px;
+  width: 350px;
+}
+
+#app h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+#weatherInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+#location {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 8px;
+}
+
+#temperature {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#description {
+  font-size: 18px;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+#description.clear {
+  color: #ffd700;
+}
+
+#description.clear::before {
+  content: "☀️ ";
+}
+
+#description.clouds {
+  color: #7f8c8d;
+}
+
+#description.clouds::before {
+  content: "☁️ ";
+}
+
+#description.rain {
+  color: #3498db;
+}
+
+#description.rain::before {
+  content: "🌧️ ";
+}
+
+#description.snow {
+  color: #00aaff;
+}
+
+#description.snow::before {
+  content: "❄️ ";
+}
+
+#description.thunderstorm {
+  color: #ff4500;
+}
+
+#description.thunderstorm::before {
+  content: "⛈️ ";
+}
