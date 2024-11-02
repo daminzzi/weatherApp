@@ -1,3 +1,4 @@
+//파일들을 웹 사이트 브라우저 안에서 하나로 실행할 수 있도록 만들어주는 라이브러리
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
