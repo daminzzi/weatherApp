@@ -1,0 +1,22 @@
+#app{
+    display:flex;
+    justify-content: flex-start;
+}
+*{  
+    border-block: 0.01rem solid;
+    border-block-color: inherit;
+    writing-mode: horizontal-tb;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    display:flex;
+    justify-content: flex-start;
+}
+
+p{
+    background-color: rgb(246, 234, 174);
+}
