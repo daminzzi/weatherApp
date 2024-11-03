@@ -1,0 +1,26 @@
+body {
+    background-color:lightskyblue;
+    margin: 50px;
+    text-align: center;
+}
+
+#app {
+    padding: 20px;
+    background-color: lightpink;
+    color:black
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+div {
+    padding: 5px;
+    background-color: white;
+    font-size: 20px;
+}
+
+#current-time {
+    font-size: 25px;
+}
