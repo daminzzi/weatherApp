@@ -1,3 +1,6 @@
+//많은 파일들이 있는데 이걸 웹사이트 브라우저 상에서 한번에 실행할 수 있게
+//만들어주는 라이브러리
+//webpack.config.js
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
