@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: hb;
+    src: url(font/HBIOS-SYS.ttf) format('woff');
+}
+
+body {
+    font-family: hb; /* 글꼴 설정 */
+    background-color: rgb(11, 2, 94); /* 배경색 설정 */
+    color: white; /* 글자 색 설정 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 전체 화면 높이 */
+}
+
+/* 앱 컨테이너 스타일 */
+#app {
+    background-color: rgb(117, 117, 117); /* 흰색 배경 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    padding: 50px; /* 내부 여백 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    width: 400px; /* 폭 설정 */
+}
+
+/* 제목 스타일 */
+h1 {
+    color: #000000; /* 제목 색 설정 */
+    margin-bottom: 20px; /* 제목 아래 여백 */
+    font-family: hb; /* 글꼴 설정 */
+}
+
+/* 날씨 정보 요소 스타일 */
+p {
+    margin: 20px 0; /* 단락 여백 설정 */
+    font-size: 18px; /* 글자 크기 설정 */
+}
+
