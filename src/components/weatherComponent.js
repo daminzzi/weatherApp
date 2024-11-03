@@ -13,7 +13,13 @@ export function createWeatherComponent(API_KEY){
     const temperatureElement = document.createElement('p');
     temperatureElement.id = 'temperature';
     weatherContainer.appendChild(temperatureElement);
+    
+    //현재 습도
+    const humidityElement = document.createElement('p');
+    humidityElement.id = 'temperature';
+    weatherContainer.appendChild(humidityElement);
 
+    //날씨 설명
     const descriptionElement = document.createElement('p');
     descriptionElement.id = 'description';
     weatherContainer.appendChild(descriptionElement);
@@ -25,6 +31,7 @@ export function createWeatherComponent(API_KEY){
             const data = response.data;
             locationElement.textContent = `위치: ${data.name}`;
             temperatureElement.textContent = `온도: ${data.main.temp}℃`;
+            humidityElement.textContent = `습도: ${data.main.humidity}`;
             descriptionElement.textContent = `날씨: ${data.weather[0].description}`;
         }).catch(error => {
             locationElement.textContent = '날씨 정보를 가져오는 데 실패했습니다.';
