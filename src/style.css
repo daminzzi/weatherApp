@@ -9,19 +9,30 @@ body {
     min-height: 100vh;
 }
 
-#app{
-    background-color: blue;
+#app {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
 }
 
 #app h1 {
     font-size: 1.5em;
-    color: #333;
-    margin-bottom: 20px;
+    color: blue;
+    margin-bottom: 30px;
 }
 
 p{
-    color: red;
+    color: rgb(89, 82, 82);
     width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     border: 1px solid black;
 }
 

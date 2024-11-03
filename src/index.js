@@ -1,6 +1,8 @@
 const { createTimeComponent } = require('./components/timeComponent');
 const { createWeatherComponent } = require('./components/weatherComponent');
 import { config } from "../apikeys"
+import './style.css';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const appDiv = document.getElementById('app'); 
