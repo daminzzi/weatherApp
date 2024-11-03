@@ -1,0 +1,22 @@
+#app{
+    display:flex;
+    justify-content: center;
+    align-content: space-around;
+}
+h1{
+    font-size:50px;
+    background-color: gainsboro;
+}
+div{
+    display:flex;
+    align-items: flex-start;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+p{
+    font-size: 30px;
+    background-color: aliceblue;
+}
+#cloud{
+    background-image: url(./cloud.jpg);
+}
